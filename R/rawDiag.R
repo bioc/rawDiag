@@ -734,6 +734,7 @@ plotChargeState <- function(x, method='trellis'){
 #' @inherit plotLockMassCorrection params return references author
 #' @importFrom rlang .data
 #' @examples
+#'  if (Sys.info()['sysname'] %in% c("Darwin", "Linux")) {Sys.which('mono')}
 #'  rawrr::sampleFilePath() |> rawDiag::readRaw() -> S
 #'
 #' S |> rawDiag::plotScanTime()

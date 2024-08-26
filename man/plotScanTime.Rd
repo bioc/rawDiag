@@ -21,6 +21,7 @@ a \code{\link[ggplot2]{ggplot}} object.
 Plotting the elapsed scan time for each individual scan event.
 }
 \examples{
+ if (Sys.info()['sysname'] \%in\% c("Darwin", "Linux")) {Sys.which('mono')}
  rawrr::sampleFilePath() |> rawDiag::readRaw() -> S
 
 S |> rawDiag::plotScanTime()
