@@ -21,8 +21,11 @@ a \code{\link[ggplot2]{ggplot}} object.
 Plotting the elapsed scan time for each individual scan event.
 }
 \examples{
+## for debugging bioconductor check
  if (Sys.info()['sysname'] \%in\% c("Darwin", "Linux")) {Sys.which('mono')}
  rawrr::sampleFilePath() |> rawDiag::readRaw() -> S
+
+rawDiag::checkRawrr()
 
 S |> rawDiag::plotScanTime()
 }

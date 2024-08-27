@@ -33,6 +33,7 @@ The set up procedure for the rawrr package needs to be run in order to use
 this package.
 }
 \examples{
+rawDiag::checkRawrr()
 rawrr::sampleFilePath() |>
   rawDiag::readRaw()
 }

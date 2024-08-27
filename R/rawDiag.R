@@ -18,6 +18,7 @@
 #' @author Christian Panse (2016-2023)
 #' @aliases rawDiag readRaw
 #' @examples
+#' rawDiag::checkRawrr()
 #' rawrr::sampleFilePath() |>
 #'   rawDiag::readRaw()
 #' @importFrom rawrr readIndex readTrailer readChromatogram
@@ -734,8 +735,11 @@ plotChargeState <- function(x, method='trellis'){
 #' @inherit plotLockMassCorrection params return references author
 #' @importFrom rlang .data
 #' @examples
+#' ## for debugging bioconductor check
 #'  if (Sys.info()['sysname'] %in% c("Darwin", "Linux")) {Sys.which('mono')}
 #'  rawrr::sampleFilePath() |> rawDiag::readRaw() -> S
+#'
+#' rawDiag::checkRawrr()
 #'
 #' S |> rawDiag::plotScanTime()
 #' @export
