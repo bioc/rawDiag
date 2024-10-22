@@ -10,7 +10,7 @@ Authors@R: c(person(given = "Christian", family = "Panse",
 	person(given = "Tobias", family = "Kockmann",
 	  email = "Tobias.Kockmann@fgcz.ethz.ch", role = "aut"))
 Depends:
-  R (>= 4.3)
+  R (>= 4.4)
 Imports:
   dplyr,
   ggplot2 (>= 3.4),
@@ -19,7 +19,7 @@ Imports:
   htmltools,
   BiocManager,
   BiocParallel,
-  rawrr (>= 1.13.1),
+  rawrr (>= 1.13.3),
   rlang,
   reshape2,
   scales,
