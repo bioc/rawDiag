@@ -19,7 +19,7 @@ Imports:
   htmltools,
   BiocManager,
   BiocParallel,
-  rawrr (>= 1.13.3),
+  rawrr (>= 1.15.3),
   rlang,
   reshape2,
   scales,

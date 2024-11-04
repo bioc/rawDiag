@@ -151,44 +151,6 @@ ThermoFisher.CommonCore.*.dll
 In case you prefer to compile `rawrr.exe` from C# source code, please install
 the mono compiler and xbuild by installing the following Linux packages:
 
-```
-sudo apt-get install mono-mcs mono-xbuild
-```
-
-Otherwise, to execute the precompiled code, the following Linux packages are
-sufficient:
-
-```
-sudo apt-get install mono-runtime libmono-system-data4.0-cil -y
-```
-
-The output should look like:
-
-```{r monoVersion}
-if (Sys.info()["sysname"] %in% c("Darwin", "Linux")) {
-  system2("mono", args = '--version', stdout = TRUE)
-}
-```
-
-### macOS (Catalina/BigSur)
-
-```
-brew install mono
-```
-
-or install from
-
-https://www.mono-project.com/
-
-### Microsoft Windows
-
-Running the `rawrr.exe` will run out of the box.
-
-If the native C# compiler is not available install mono from:
-
-https://www.mono-project.com/
-
-## R
 
 To install this package, start R (version ">=4.4") and enter: 
 

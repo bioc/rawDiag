@@ -893,7 +893,7 @@ plotCycleLoad <- function(x, method = 'trellis'){
 }
 
 #' Checks Bioconductor installation instructions
-#' @importFrom rawrr installRawFileReaderDLLs installRawrrExe
+#' @importFrom rawrr iinstallRawrrExe
 #' @importFrom BiocManager install
 #' @return TRUE if everything is installed correctly
 #' @export
@@ -904,8 +904,6 @@ checkRawrr <- function(){
   if (isFALSE(requireNamespace("rawrr", quietly = TRUE)))
     stop("exec", "BiocManager::install('rawrr')")
 
-  if (isFALSE(rawrr:::.checkRawFileReaderDLLs()))
-    rawrr::installRawFileReaderDLLs()
 
   if (isFALSE(file.exists(rawrr:::.rawrrAssembly())))
     rawrr::installRawrrExe()

@@ -14,7 +14,6 @@ to find installation notes for the rawrr package.
 4. Type and run the following commands:
 
 ```
-rawrr::installRawFileReaderDLLs()
 rawrr::installRawrrExe()
 ```
 
