@@ -1,5 +1,9 @@
 # News for Package 'rawDiag'
 
+## Changes in version 1.3.x (dev)
+
+* adapt to rawrr changes
+
 ## Changes in version 0.99.25 (2024-02-28)
 
 * Test
