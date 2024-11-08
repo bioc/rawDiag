@@ -168,9 +168,6 @@ can be done on all platforms using the command:
 rawDiag::checkRawrr
 rawDiag::checkRawrr()
 
-if (isFALSE(rawrr::.checkDllInMonoPath())){
-  rawrr::installRawFileReaderDLLs()
-}
 rawrr::installRawrrExe()
 ```
 
