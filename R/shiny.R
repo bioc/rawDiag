@@ -116,16 +116,17 @@ buildRawDiagShinyApp <- function(rawDir = (rawrr::sampleFilePath() |> dirname())
 rawDiagUI <- function(id){
   ns <- NS(id)
   
-  plotFunctions <- ls("package:rawDiag")[ls("package:rawDiag") |> grepl(pattern = "^plot")]
+  ls("package:rawDiag")[ls("package:rawDiag") |> grepl(pattern = "^plot")] -> plotFunctions 
   
   tagList(
     column(12, offset = 0,
            #fluidRow(a(img(src="https://img.shields.io/badge/JPR-10.1021%2Facs.jproteome.8b00173-brightgreen"),
            #           href='http://dx.doi.org/10.1021/acs.jproteome.8b00173')),
            fluidRow(
+             # FGCZ wants to have TIC and BPC 1st
              column(width = 4,
                     selectInput(ns("plotFUN"), "function", choices = plotFunctions,
-                                selected = plotFunctions[1], multiple = FALSE)),
+                                selected = plotFunctions[which(plotFunctions == "plotTicBasepeak")], multiple = FALSE)),
              column(width = 4,
                     selectInput(ns("plotArg"), "argument", choices = c("trellis", "violin", "overlay"),
                                 selected = "trellis", multiple = FALSE),
