@@ -200,7 +200,7 @@ rawDiagServer <- function(id, vals){
                      n <- n * length(rawfile()) 
                    }
                    
-                   n * as.integer(input$plotHeight)
+                   # n * as.integer(input$plotHeight)
                  })
                  
                  dynamicWidth <- reactive({
